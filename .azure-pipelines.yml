@@ -35,3 +35,8 @@ steps:
   inputs:
     path: jboss-as-quickstart/helloworld/target/jboss-as-helloworld.war
     artifact: HelloWorld.war
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: jboss-as-quickstart/helloworld/target/jboss-as-helloworld.war
+    artifactName: HelloWorld.war
