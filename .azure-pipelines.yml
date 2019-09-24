@@ -5,6 +5,7 @@
 
 trigger:
 - master
+- example
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -14,6 +15,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
+      set -x
       echo 'bout to get up in some Java'
       git clone https://github.com/mojavelinux/jboss-as-quickstart.git
       cd jboss-as-quickstart/helloworld
