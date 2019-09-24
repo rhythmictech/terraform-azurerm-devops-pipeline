@@ -30,3 +30,8 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    path: $(System.DefaultWorkingDirectory)/helloworld/target/jboss-as-helloworld.war
+    artifact: HelloWorld.war
