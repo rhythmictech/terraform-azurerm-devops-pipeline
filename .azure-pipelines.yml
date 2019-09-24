@@ -33,5 +33,5 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    path: $(System.DefaultWorkingDirectory)/helloworld/target/jboss-as-helloworld.war
+    path: jboss-as-quickstart/helloworld/target/jboss-as-helloworld.war
     artifact: HelloWorld.war
