@@ -36,7 +36,16 @@ steps:
     path: jboss-as-quickstart/helloworld/target/jboss-as-helloworld.war
     artifact: HelloWorld.war
 
-- task: PublishBuildArtifacts@1
+- task: Docker@2
+  displayName: Login to ACR
   inputs:
-    pathtoPublish: jboss-as-quickstart/helloworld/target/jboss-as-helloworld.war
-    artifactName: HelloWorld.war
+    command: login
+    containerRegistry: rhythmic-test-docker-registry-endpoint
+
+- task: Docker@2
+  displayName: Build and Push
+  inputs:
+    command: buildAndPush
+    repository: jboss-hello-world
+    tags: |
+      latest

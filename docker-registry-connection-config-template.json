@@ -1,0 +1,33 @@
+{
+  "id": "ed81d39f-2aab-4062-8c13-36f46a508983",
+  "administratorsGroup": null,
+  "authorization": {
+    "parameters": {
+      "tenantId": "70796332-d915-4b4c-b4b0-0ea75564f88f",
+      "servicePrincipalId": "<placeholder>",
+      "scope": "/subscriptions/7b7d66af-73ca-4c68-b634-5329ef063c5b/resourceGroups/eeoc-staging-k8s-cluster-resources/providers/Microsoft.ContainerRegistry/registries/manualTest",
+      "loginServer": "manualtest.azurecr.io",
+      "role": "8311e382-0749-4cb8-b61a-304f252e45ec"
+    },
+    "scheme": "ServicePrincipal"
+  },
+  "createdBy": null,
+  "data": {
+    "registrytype": "ACR",
+    "subscriptionId": "7b7d66af-73ca-4c68-b634-5329ef063c5b",
+    "subscriptionName": "Free Trial",
+    "azureSpnRoleAssignmentId": "",
+    "azureSpnPermissions": "",
+    "spnObjectId": "",
+    "appObjectId": "",
+    "registryId": "/subscriptions/7b7d66af-73ca-4c68-b634-5329ef063c5b/resourceGroups/eeoc-staging-k8s-cluster-resources/providers/Microsoft.ContainerRegistry/registries/manualTest"
+  },
+  "name": "rhythmic-test-docker-registry-endpoint",
+  "type": "dockerregistry",
+  "url": "https://manualtest.azurecr.io",
+  "readersGroup": null,
+  "groupScopeId": null,
+  "serviceEndpointProjectReferences": null,
+  "isReady": false,
+  "operationStatus": null
+}
